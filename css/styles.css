@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+.top-container {
+  height: 100px;
+  width: 100%;
+  background-color: #E4F9F5;
+}
+.img-cont {
+
+  height: 300px;
+  width: 100%;
+}
+.bottom-container {
+  padding: 30px 100px 10px;
+}
+
+table,td {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #b8c9c6;
+  padding: 10px;
+
+}
+th {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #b8c9c6;
+  padding: 20px;
+}
+.sub-button {
+  padding: 5px 100px;
+}
+
+#style-button {
+
+  background-color: grey; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+#style-button:hover {
+  background-color: #555555;
+  color: white;
