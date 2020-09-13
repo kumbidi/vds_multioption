@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Registration</title>
-    <script src="jquery.min.js"></script>
-    <script src="jquery.noty.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.noty.js"></script>
   </head>
   <script>
 
@@ -19,10 +19,11 @@
 
     $.ajax({
 		type:'POST',
-		url:'updates.php',
+		url:'http://192.168.33.10/updates.php',
     data:'action=register&date_id='+date_id+'&time_id='+time_id+'&seva_id='+seva_id+'&venue_id='+venue_id+'&activity_id='+activity_id+'&price_id='+price_id,
 
 		success:function(msg){
+      window.alert("blah");
 		window.location.reload();
 
 	  }

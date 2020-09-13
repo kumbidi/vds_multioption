@@ -25,13 +25,13 @@
       <?php
       	$servername="localhost";
         $username="root";
-        $password="";
+        $password="root";
       	$db="vds_puja";
 
         $conn=mysqli_connect($servername,$username,$password);
         if(!$conn)
         {
-        		die("Connection Failed :" .mysqli_connect_eerror());
+        		die("Connection Failed :" .mysqli_connect_error());
       	}
         //echo "Connected Successfully";
 
@@ -61,11 +61,11 @@
 
               <tr>
                 <td><input type="checkbox" id="<?php echo $qrysp1['id'];?>"></td>
-                <td><?php echo $qrysp1['Time'];?></td>
-                <td><?php echo $qrysp1['Time'];?></td>
-                <td><?php echo $qrysp1['Seva'];?></td>
-                <td><?php echo $qrysp1['Venue'];?></td>
-                <td><?php echo $qrysp1['Activity'];?></td>
+                <td><?php echo $qrysp1['date'];?></td>
+                <td><?php echo $qrysp1['time'];?></td>
+                <td><?php echo $qrysp1['seva'];?></td>
+                <td><?php echo $qrysp1['venue'];?></td>
+                <td><?php echo $qrysp1['activity'];?></td>
                 <td><input type="hidden" value="<?php echo $qrysp1['id'];?>"></td>
 
               </tr>
