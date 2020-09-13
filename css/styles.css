@@ -1,13 +1,10 @@
-body {
-  margin: 0;
-}
-.top-container {
+/* .top-container {
   height: 100px;
   width: 100%;
-  background-color: #E4F9F5;
-}
-.img-cont {
+  background-color: #e4f9f5;
+} */
 
+.img-cont {
   height: 300px;
   width: 100%;
 }
@@ -15,11 +12,22 @@ body {
   padding: 30px 100px 10px;
 }
 
-table,td {
+#quote-area {
+  background-image: url(/images/vds.jpg);
+  background-position: left;
+  background-size: contain;
+}
+
+/* table {
+  border-radius: 0.5rem;
+} */
+
+/* table,td {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
   border: 1px solid #b8c9c6;
+
   padding: 10px;
 
 }
@@ -29,13 +37,13 @@ th {
   border-collapse: collapse;
   border: 1px solid #b8c9c6;
   padding: 20px;
-}
+} */
+
 .sub-button {
   padding: 5px 100px;
 }
 
 #style-button {
-
   background-color: grey; /* Green */
   border: none;
   color: white;
@@ -47,9 +55,9 @@ th {
   margin: 4px 12px;
   transition-duration: 0.4s;
   cursor: pointer;
-
 }
 
 #style-button:hover {
   background-color: #555555;
   color: white;
+}
