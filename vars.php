@@ -4,6 +4,9 @@ $username="root";
 $password="root";
 $db="vds_puja";
 
-$title_pooja="Pooja Listing";
+$page_titles =  array(
+  "sankalpa_listing"    => "Sankalpa Listing",
+  "sankalpa_subscribed" => "Sankalpa Subscribed",
+);
 
 ?>

@@ -1,9 +1,14 @@
 <?php
 include_once 'vars.php';
+
+$this_page_title=$page_titles["sankalpa_listing"];
+
 include_once 'header.html';
 ?>
 
-<div class="container"></div>
+<div id="header">
+  <img src="images/aol_logo.png" alt="">
+</div>
 <div class="container" id="#quote-area">
   <img class="img-cont" src="images/vds.jpg" />
 
@@ -21,7 +26,7 @@ include_once 'header.html';
     $num=mysqli_num_rows($querry_select);
   ?>
 </div>
-<form>
+<form id="all_sankalpas_listing" action="multi_sankalpa.php" method="GET">
   <div class="bottom-container">
     <table class="table table-dark rounded">
       <thead>
@@ -45,7 +50,6 @@ include_once 'header.html';
           <td><?php echo $qrysp1['seva'];?></td>
           <td><?php echo $qrysp1['venue'];?></td>
           <td><?php echo $qrysp1['activity'];?></td>
-          <td><input type="hidden" value="<?php echo $qrysp1['id'];?>" /></td>
         </tr>
       </tbody>
       <?php
@@ -55,7 +59,7 @@ include_once 'header.html';
     </table>
   </div>
   <div class="sub-button">
-    <input type="button" class="btn btn-dark" value="Register" id="style-button" onclick="test()" />
+    <input type="button" class="btn btn-dark" value="Register" id="style-button"/>
   </div>
 </form>
 
