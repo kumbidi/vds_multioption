@@ -1,34 +1,47 @@
 <?php
 include_once 'vars.php';
 
-$this_page_title=$page_titles["sankalpa_listing"];
+/* informational */
+$this_page_id = 0;
 
-include_once 'header.html';
+$this_page_title=$page_titles[0];
+$this_page_body_tag_id=$page_body_tag_ids[0];
+
+include_once 'header.php';
 ?>
 
 <div id="header">
-  <img src="images/aol_logo.png" alt="">
+  <img src="images/aol_logo.png" alt="" />
 </div>
-<div class="container" id="#quote-area">
-  <img class="img-cont" src="images/vds.jpg" />
 
-  <?php
-
-    $conn=mysqli_connect($servername,$username,$password);
-    if(!$conn)
-    {
-        die("Connection Failed :" .mysqli_connect_error());
-    }
-    //echo "Connected Successfully";
-
-    mysqli_select_db($conn,$db);
-    $querry_select=mysqli_query($conn,"select * from puja_details");
-    $num=mysqli_num_rows($querry_select);
-  ?>
+<div id="quote-area">
+  <div class="container">
+    <!-- <img class="img-cont" src="images/vds.jpg" /> -->
+    <p>"SANKALPA is having an intention. That is it! IT WORKS.
+      Desires mean it has to happen now. In SANKALPA you say, 
+      LET IT HAPPEN WHENEVER IT HAS TO."</p>
+    <hr>
+    <p>Gurudev Sri Sri Ravi Shankar</p>
+  </div>
 </div>
+
+<?php 
+
+$conn=mysqli_connect($servername,$username,$password);
+if(!$conn)
+{
+    die("Connection Failed :" .mysqli_connect_error());
+}
+//echo "Connected Successfully";
+
+mysqli_select_db($conn,$db);
+$querry_select=mysqli_query($conn,"select * from puja_details");
+$num=mysqli_num_rows($querry_select);
+?>
+
 <form id="all_sankalpas_listing" action="multi_sankalpa.php" method="GET">
   <div class="bottom-container">
-    <table class="table table-dark rounded">
+    <table class="table rounded">
       <thead>
         <tr>
           <th>SANKALPA</th>
@@ -59,10 +72,10 @@ include_once 'header.html';
     </table>
   </div>
   <div class="sub-button">
-    <input type="button" class="btn btn-dark" value="Register" id="style-button"/>
+    <input type="button" class="btn btn-dark" value="Register" id="style-button" />
   </div>
 </form>
 
 <?php
-include 'footer.html';
+include 'footer.php';
 ?>
