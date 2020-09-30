@@ -20,5 +20,14 @@
     return;
   }
 
+ elseif ($action=="search")
+ {
+	$sear=mysqli_query($conn,"select * from puja_details where id='".$_POST['search_id']."'");
+ 	//$num=mysqli_num_rows($qry);
+	$seardata=mysqli_fetch_array($sear);
+	echo $seardata['date'].",".$seardata['price'].",".$seardata['seva'];
+	return;
+}
+
 
  ?>
