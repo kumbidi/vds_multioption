@@ -45,6 +45,7 @@
         <td><input type="text" id="seva_id"></td>
       </tr>
       <tr>
+      <!-- Add some comment -->
         <td>Venue</td>
         <td><input type="text" id="venue_id"></td>
       </tr>
