@@ -1,5 +1,7 @@
 # -*- mode: ruby -*-
 # Test change - HK1
+
+# Test change - HK from online repo
 # vi: set ft=ruby :
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
